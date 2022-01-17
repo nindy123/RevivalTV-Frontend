@@ -36,12 +36,12 @@ const NavHead = () => {
                                     <img
                                         className="block lg:hidden w-auto"
                                         src="/images/Logo.png"
-                                        alt="Workflow"
+                                        alt="Logo"
                                     />
                                     <img
                                         className="hidden lg:block w-auto"
                                         src="/images/Logo.png"
-                                        alt="Workflow"
+                                        alt="Logo"
                                     />
                                 </div>
                                 <div className="hidden sm:block sm:ml-6">

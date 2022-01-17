@@ -1,4 +1,5 @@
-import { AnnotationIcon, GlobeAltIcon, LightningBoltIcon, ScaleIcon } from '@heroicons/react/outline'
+import { CameraIcon, DocumentReportIcon, DocumentTextIcon } from '@heroicons/react/solid'
+import {ClockIcon} from '@heroicons/react/outline'
 
 const product = {
     name: 'Drone Light',
@@ -8,10 +9,10 @@ const product = {
     imageSrc: '/images/highlight_large.png',
     imageAlt: 'features of drone light',
     listfeature: [
-        { icon: AnnotationIcon, class: 'bg-white', description: '4K Camera Resolution' },
-        { icon: AnnotationIcon, class: 'bg-white', description: '2 TB Storage' },
-        { icon: AnnotationIcon, class: 'bg-white', description: '60 m/s Speed' },
-        { icon: AnnotationIcon, class: 'bg-white', description: '5000 mAh Battery' }
+        { id:1, icon: CameraIcon, class: 'bg-white', description: '4K Camera Resolution' },
+        { id:2, icon: DocumentReportIcon, class: 'bg-white', description: '2 TB Storage' },
+        { id:3, icon: ClockIcon, class: 'bg-white', description: '60 m/s Speed' },
+        { id:4, icon: DocumentTextIcon, class: 'bg-white', description: '5000 mAh Battery' }
     ]
 }
 
@@ -52,13 +53,13 @@ const DPOne = () => {
                     <div className="bg-white">
                         <div className="mx-auto">
                             <div className="mt-6 grid grid-cols-1 gap-2 grid-cols-4">
-                                {imgproducts.map((img) => (
-                                    <div key={img.id} className="group relative">
+                                {imgproducts.map((image) => (
+                                    <div key={image.id} className="group relative">
                                         <div className="border rounded">
                                             <div className="p-2 w-full min-h-80 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:aspect-none">
                                                 <img
-                                                    src={img.imageSrc}
-                                                    alt={img.imageAlt}
+                                                    src={image.imageSrc}
+                                                    alt={image.imageAlt}
                                                     className="object-center object-cover md:h-[100px] xs:h-[59px] h-[59px] md:w-[150px] xs:w-[77px] w-[77px]"
                                                 />
                                             </div>
@@ -80,7 +81,7 @@ const DPOne = () => {
                         <div className="pt-4">
                             <div className="items-center">
                                 {product.listfeature.map((list) => (
-                                    <div>
+                                    <div key={list.id}>
                                         <div className="absolute pt-2 flex items-center justify-center text-black">
                                             <list.icon className="h-6 w-6" aria-hidden="true" />
                                         </div>
