@@ -1,5 +1,7 @@
-import { CameraIcon, DocumentReportIcon, DocumentTextIcon } from '@heroicons/react/solid'
+import { CameraIcon } from '@heroicons/react/solid'
 import {ClockIcon} from '@heroicons/react/outline'
+import { TiBatteryHigh } from "react-icons/ti";
+import { ImFloppyDisk } from "react-icons/im";
 
 const product = {
     name: 'Drone Light',
@@ -10,9 +12,9 @@ const product = {
     imageAlt: 'features of drone light',
     listfeature: [
         { id:1, icon: CameraIcon, class: 'bg-white', description: '4K Camera Resolution' },
-        { id:2, icon: DocumentReportIcon, class: 'bg-white', description: '2 TB Storage' },
+        { id:2, icon: ImFloppyDisk, class: 'bg-white', description: '2 TB Storage' },
         { id:3, icon: ClockIcon, class: 'bg-white', description: '60 m/s Speed' },
-        { id:4, icon: DocumentTextIcon, class: 'bg-white', description: '5000 mAh Battery' }
+        { id:4, icon: TiBatteryHigh, class: 'bg-white', description: '5000 mAh Battery' }
     ]
 }
 
