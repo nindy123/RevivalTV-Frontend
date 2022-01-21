@@ -72,7 +72,7 @@ const NavHead = () => {
                     </div>
 
                     <Disclosure.Panel className="sm:hidden">
-                        <div className="px-2 pt-2 pb-3 space-y-1">
+                        <div className="px-4 pt-2 pb-3 space-y-1 grid">
                             {navigation.map((item) => (
                                 <Disclosure.Button
                                     key={item.name}
@@ -86,7 +86,7 @@ const NavHead = () => {
                                     {item.name}
                                 </Disclosure.Button>
                             ))}
-                            <div className="inset-y-0 right-0 flex pl-2 items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                            <div className="inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                                 <button
                                     type="button"
                                     className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
