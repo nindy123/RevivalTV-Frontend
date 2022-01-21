@@ -33,11 +33,11 @@ const SectionFour = () => {
                 <div className="relative rounded-xl overflow-hidden">
                     <div className="relative w-full sm:grid md:flex gap-6 snap-x snap-mandatory overflow-x-hidden pt-10">
                         <div className="snap-end scroll-mx-8 shrink-0">
-                            <div className="shrink-0 sm:w-10 md:w-48 sm:-mr-[5px]"></div>
+                            <div className="shrink-0 sm:w-10 md:w-52 sm:-mr-[5px]"></div>
                         </div>
                         {products.map((product) => (
                             <div key={product.name} className="snap-end scroll-mx-8 shrink-0">
-                                <div className="sm:border-0 md:border border-0 rounded p-5 text-center lg:w-96 sm:w-full w-full">
+                                <div className="sm:border-0 md:border border-0 rounded p-5 text-center lg:w-96 md:w-72 sm:w-full">
                                     <div className="relative w-full bg-white overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
                                         <img
                                             src={product.imageSrc}
@@ -51,7 +51,7 @@ const SectionFour = () => {
                                     <a href={product.href}>
                                         <button
                                             type="submit"
-                                            className="mt-6 md:w-72 bg-indigo-600 border border-transparent rounded-3xl py-3 px-8 text-base font-semibold text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 align-middle"
+                                            className="mt-6 lg:w-64 md:w-44 bg-indigo-600 border border-transparent rounded-3xl py-3 px-8 text-base font-semibold text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 align-middle"
                                         >
                                             GET NOW
                                         </button>

@@ -9,10 +9,6 @@ const navigation = [
     { name: 'SUPPORT', href: '#', current: false }
 ]
 
-function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-}
-
 const NavHead = () => {
     return (
         <Disclosure as="nav" className="bg-black">
@@ -45,16 +41,15 @@ const NavHead = () => {
                                     />
                                 </div>
                                 <div className="hidden sm:block sm:ml-6">
-                                    <div className="flex space-x-4">
+                                    <div className="flex">
                                         {navigation.map((item) => (
                                             <a
                                                 key={item.name}
                                                 href={item.href}
-                                                className={classNames(
-                                                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                                                    'px-8 py-2 rounded-md text-sm font-medium'
-                                                )}
-                                                aria-current={item.current ? 'page' : undefined}
+                                                className={
+                                                    item.current ? 'sm:px-4 md:px-8 py-2 rounded-md text-sm font-medium bg-gray-900 text-white' : 'sm:px-4 md:px-8 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
+                                                }
+                                                aria-current={item.current}
                                             >
                                                 {item.name}
                                             </a>
@@ -83,10 +78,9 @@ const NavHead = () => {
                                     key={item.name}
                                     as="a"
                                     href={item.href}
-                                    className={classNames(
-                                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                                        'block px-3 py-2 rounded-md text-base font-medium'
-                                    )}
+                                    className={
+                                        item.current ? 'sm:px-4 md:px-8 py-2 rounded-md text-sm font-medium bg-gray-900 text-white' : 'sm:px-4 md:px-8 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
+                                    }
                                     aria-current={item.current ? 'page' : undefined}
                                 >
                                     {item.name}

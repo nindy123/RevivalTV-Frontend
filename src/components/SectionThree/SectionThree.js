@@ -7,7 +7,7 @@ const SectionThree = () => {
                 </div>
             </div>
             <div className="relative">
-                <div className="sm:pr-0 md:pr-32 pr-0 sm:text-center md:text-left text-center sm:col-span-8 lg:col-span-7">
+                <div className="sm:pr-0 lg:pr-32 pr-0 sm:text-center md:text-left text-center sm:col-span-8 lg:col-span-7">
                     <h2 className="text-3xl font-medium text-gray-900 sm:pr-12">Why Drone Light?</h2>
                     <h3 className="mt-5 text-lg text-gray-900 font-light">
                         We provide a best self drone easy to use and operate. With
