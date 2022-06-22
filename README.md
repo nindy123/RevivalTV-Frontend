@@ -34,6 +34,10 @@ https://revivaltv-frontend.netlify.app/
   ```
 
   This will start a web server at `http://localhost:3000`
+  
+- Start storybook
+
+  This will start a web server at `http://localhost:6006`
 
 ## Build for production
 
