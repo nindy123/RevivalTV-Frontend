@@ -7,7 +7,7 @@
 - [Getting started](#Getting-started)
 - [Build to production](#Build-to-production)
 
-## Netlify-source
+## Netlify Link
 
 https://revivaltv-frontend.netlify.app/
 
