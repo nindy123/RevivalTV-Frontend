@@ -2,9 +2,14 @@
 
 ## Table of Content
 
+- [Netlify](#Netlify-source)
 - [Prerequisite](#Prerequisite)
 - [Getting started](#Getting-started)
 - [Build to production](#Build-to-production)
+
+## Netlify-source
+
+https://revivaltv-frontend.netlify.app/
 
 ## Prerequisite
 
